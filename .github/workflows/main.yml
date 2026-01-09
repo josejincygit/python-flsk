@@ -24,7 +24,7 @@ jobs:
         key: ${{ secrets.EC2_KEY }}
         debug: true
         script: |
-          docker stop falsk_demo || true
-          docker rm falsk_demo || true
-          docker build -t falsk_demo .
+          docker stop suspicious_spence || true
+          docker rm suspicious_spence || true
+          docker build -t suspicious_spence .
           docker run -d --name suspicious_spence -p 5000:5000 falsk_demo
